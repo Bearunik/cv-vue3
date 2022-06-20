@@ -9,7 +9,8 @@ export enum skillCategory {
 }
 
 export default interface SkillInterface {
-    name: string
-    category: skillCategory,
-    src: string
+    name: string;
+    description: string;
+    category: skillCategory;
+    src: string;
 }
