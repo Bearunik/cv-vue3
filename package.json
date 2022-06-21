@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm ls --json > src/config/packagesInfos.json",
-    "preserve": "npm ls --json > src/config/packagesInfos.json",
-    "prebuild": "npm ls --json > src/config/packagesInfos.json",
+    "postinstall": "npm ls --json > src/configs/packagesInfos.json",
+    "preserve": "npm ls --json > src/configs/packagesInfos.json",
+    "prebuild": "npm ls --json > src/configs/packagesInfos.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
