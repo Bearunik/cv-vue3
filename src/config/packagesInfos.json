@@ -95,8 +95,8 @@
       "resolved": "https://registry.npmjs.org/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz"
     },
     "vue-cli-plugin-i18n": {
-      "version": "0.6.1",
-      "resolved": "https://registry.npmjs.org/vue-cli-plugin-i18n/-/vue-cli-plugin-i18n-0.6.1.tgz"
+      "version": "2.3.1",
+      "resolved": "https://registry.npmjs.org/vue-cli-plugin-i18n/-/vue-cli-plugin-i18n-2.3.1.tgz"
     },
     "vue-cli-plugin-vuetify": {
       "version": "2.5.1",
