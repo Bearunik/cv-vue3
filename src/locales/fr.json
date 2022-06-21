@@ -1,4 +1,7 @@
 {
   "message": "Bonjour i18n !!",
-  "dependencies": "Dépendences"
+  "project": {
+    "version": "Version du projet",
+    "dependencies": "Dépendences"
+  }
 }

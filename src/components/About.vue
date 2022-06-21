@@ -1,6 +1,8 @@
 <template>
+  <h1>{{ $t('project.version') }}</h1>
+  <p>{{ version }}</p>
+  <h1>{{ $t('project.dependencies') }}</h1>
   <v-table>
-    <h1>{{ $t('dependencies') }}</h1>
     <thead>
       <tr>
         <th class="text-left">
@@ -13,7 +15,7 @@
     </thead>
     <tbody>
       <tr
-         v-for="(item, i) in dependencies"
+        v-for="(item, i) in dependencies"
         :key="i"
         :value="item"
       >
@@ -31,6 +33,7 @@ import packageInfos from '@/config/packagesInfos.json'
 @Options({
   data () {
     return {
+      version: packageInfos.version,
       dependencies: packageInfos.dependencies
     }
   },
