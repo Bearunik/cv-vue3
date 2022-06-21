@@ -1,7 +1,6 @@
 {
   "home": "Home",
   "about": "About",
-  "message": "Hello i18n !!",
   "project": {
     "version": "Project version",
     "dependencies": "Dependencies"

@@ -18,7 +18,16 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component'
+import { Options, Vue } from 'vue-class-component'
 
-export default class Footer extends Vue {}
+@Options({
+  data () {
+    return {
+      icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram']
+    }
+  }
+})
+export default class Footer extends Vue {
+  icons!: Array<string>
+}
 </script>

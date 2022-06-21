@@ -1,7 +1,7 @@
 <template>
   <h1>{{ $t('skills') }}</h1>
   <div v-for="(skill, skillIndex) in skills" v-bind:key="skillIndex">
-    {{ skillIndex }} <strong>{{ skill.name }}</strong>
+    {{ skill.name }}
   </div>
 </template>
 

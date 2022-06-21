@@ -1,17 +1,13 @@
 <template>
-  <div class="about">
-    <About />
-  </div>
+  <v-container class="about">
+    <Project />
+  </v-container>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import About from '@/components/About.vue' // @ is an alias to /src
+import Project from '@/components/Project.vue'
 
-@Options({
-  components: {
-    About
-  }
-})
-export default class HomeView extends Vue {}
+@Options({ components: { Project } })
+export default class AboutView extends Vue {}
 </script>

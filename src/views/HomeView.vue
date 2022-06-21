@@ -1,24 +1,38 @@
 <template>
-  <div class="home">
-    <v-img
-      alt="Vue logo"
-      :src="require('../assets/logo.png')"
-      class="my-3"
-      contain
-      height="200"
-    />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <v-container class="home">
+    <v-row class="text-center">
+      <v-col cols="12">
+        <v-img
+          :src="require('../assets/logo.svg')"
+          class="my-3"
+          contain
+          height="200"
+        />
+      </v-col>
+
+      <v-col class="mb-5" cols="12">
+        <Skills />
+      </v-col>
+
+      <v-col class="mb-5" cols="12">
+        <Studies />
+      </v-col>
+
+      <v-col class="mb-5" cols="12">
+        <Experiences />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import Experiences from '@/components/Experiences.vue'
+import Skills from '@/components/Skills.vue'
+import Studies from '@/components/Studies.vue'
 
 @Options({
-  components: {
-    HelloWorld
-  }
+  components: { Experiences, Skills, Studies }
 })
 export default class HomeView extends Vue {}
 </script>

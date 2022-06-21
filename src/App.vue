@@ -17,12 +17,7 @@ import Header from '@/components/Header.vue'
   components: {
     Header,
     Footer
-  },
-  data: () => ({
-    icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram']
-  })
+  }
 })
-export default class App extends Vue {
-  icons!: Array<string>
-}
+export default class App extends Vue {}
 </script>
