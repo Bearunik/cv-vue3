@@ -1,14 +1,6 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col class="mb-5" cols="12">
-        <p>{{ $t('message') }}</p>
-        <h1>{{ msg }}</h1>
-        <div v-for="(skill, index) in skills" v-bind:key="index">
-          {{ index }} {{ skill.name }}
-        </div>
-      </v-col>
-
       <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
@@ -18,66 +10,57 @@
         />
       </v-col>
 
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify 3 Beta
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
-          >
-        </p>
+      <v-col cols="12">
+        <p>{{ $t('message') }}</p>
+        <h1>{{ msg }}</h1>
       </v-col>
 
       <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-5">What's next?</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
+        <h1>{{ $t('skills') }}</h1>
+        <div v-for="(skill, skillIndex) in skills" v-bind:key="skillIndex">
+          {{ skillIndex }} <strong>{{ skill.name }}</strong>
+        </div>
       </v-col>
 
       <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-5">Important Links</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
+        <h1>{{ $t('studies') }}</h1>
+        <div v-for="(study, studyIndex) in studies" v-bind:key="studyIndex">
+          <strong>{{ study.title }}</strong>
+          <div
+            v-for="(studTodo, studyTodoIndex) in study.todo"
+            v-bind:key="studyTodoIndex"
           >
-            {{ link.text }}
-          </a>
-        </v-row>
+            {{ studTodo.title }}
+            <div
+              v-for="(studTodoTask, studyTodoTaskIndex) in studTodo.tasks"
+              v-bind:key="studyTodoTaskIndex"
+            >
+              <i>- {{ studTodoTask }}</i>
+            </div>
+          </div>
+        </div>
       </v-col>
 
       <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-5">Ecosystem</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
+        <h1>{{ $t('experiences') }}</h1>
+        <div
+          v-for="(experience, ExpIndex) in experiences"
+          v-bind:key="ExpIndex"
+        >
+          <strong>{{ experience.title }}</strong>
+          <div
+            v-for="(expTodo, ExpTodoIndex) in experience.todo"
+            v-bind:key="ExpTodoIndex"
           >
-            {{ eco.text }}
-          </a>
-        </v-row>
+            {{ expTodo.title }}
+            <div
+              v-for="(expTodoTask, expTodoTaskIndex) in expTodo.tasks"
+              v-bind:key="expTodoTaskIndex"
+            >
+              <i>- {{ expTodoTask }}</i>
+            </div>
+          </div>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -85,94 +68,36 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import SkillInterface, { skillCategory } from '@/interfaces/SkillInterface'
+import {
+  UserSkills,
+  UserExperiences,
+  UserStudies
+} from '@/controllers/UserInfosController'
+import SkillInterface from '@/interfaces/SkillInterface'
+import ExperenceInterface from '@/interfaces/ExperienceInterface'
+import StudyInterface from '@/interfaces/StudyInterface'
 
 @Options({
   props: {
     msg: String
   },
-  computed: {
-    skills () {
-      return [
-        {
-          name: 'Jenkins',
-          category: skillCategory.ENVIRONMENT,
-          src: '@/assets/logo.png'
-        },
-        {
-          name: 'Jenkins2',
-          category: skillCategory.ENVIRONMENT,
-          src: '@/assets/logo.png'
-        },
-        {
-          name: 'Jenkins3',
-          category: skillCategory.ENVIRONMENT,
-          src: '@/assets/logo.png'
-        },
-        {
-          name: 'Jenkins4',
-          category: skillCategory.ENVIRONMENT,
-          src: '@/assets/logo.png'
-        }
-      ] as Array<SkillInterface>
-    }
-  },
   data () {
     return {
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader'
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify'
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify'
-        }
-      ],
-      importantLinks: [
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com'
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify'
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs'
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify'
-        }
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com'
-        },
-        {
-          text: 'Roadmap',
-          href: 'https://vuetifyjs.com/en/introduction/roadmap/'
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
-        }
-      ]
+      skills: UserSkills.skills,
+      experiences: UserExperiences.experiences,
+      studies: UserStudies.studies
     }
+  },
+  mounted () {
+    console.log('skills', this.skills)
+    console.log('experiences', this.experiences)
+    console.log('studies', this.studies)
   }
 })
 export default class HelloWorld extends Vue {
   msg: string | undefined
-  skills: Array<SkillInterface> | undefined
-  ecosystem: Array<any> | undefined
-  importantLinks: Array<any> | undefined
-  whatsNext: Array<any> | undefined
+  skills!: Array<SkillInterface> | undefined
+  experiences!: Array<ExperenceInterface> | undefined
+  studies!: Array<StudyInterface> | undefined
 }
 </script>

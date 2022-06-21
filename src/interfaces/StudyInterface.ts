@@ -6,5 +6,5 @@ export default interface StudyInterface {
   startDate: Date
   endDate: Date
   color: string
-  withCompany: boolean
+  withCompany?: boolean
 }

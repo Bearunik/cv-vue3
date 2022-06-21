@@ -3,5 +3,8 @@
   "project": {
     "version": "Version du projet",
     "dependencies": "Dépendences"
-  }
+  },
+  "skills": "Savoirs",
+  "studies": "Etudes",
+  "experiences": "Experiences"
 }
