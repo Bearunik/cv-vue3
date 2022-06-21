@@ -1,20 +1,24 @@
 <template>
-  <h1>{{ $t('experiences') }}</h1>
-  <div v-for="(experience, ExpIndex) in experiences" v-bind:key="ExpIndex">
-    <strong>{{ experience.title }}</strong>
-    <div
-      v-for="(expTodo, ExpTodoIndex) in experience.todo"
-      v-bind:key="ExpTodoIndex"
-    >
-      {{ expTodo.title }}
-      <div
-        v-for="(expTodoTask, expTodoTaskIndex) in expTodo.tasks"
-        v-bind:key="expTodoTaskIndex"
-      >
-        <i>- {{ expTodoTask }}</i>
+  <v-card>
+    <v-card-title>{{ $t('experiences') }}</v-card-title>
+    <v-card-text>
+      <div v-for="(experience, ExpIndex) in experiences" v-bind:key="ExpIndex">
+        <strong>{{ experience.title }}</strong>
+        <div
+          v-for="(expTodo, ExpTodoIndex) in experience.todo"
+          v-bind:key="ExpTodoIndex"
+        >
+          {{ expTodo.title }}
+          <div
+            v-for="(expTodoTask, expTodoTaskIndex) in expTodo.tasks"
+            v-bind:key="expTodoTaskIndex"
+          >
+            <i>- {{ expTodoTask }}</i>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">

@@ -1,20 +1,24 @@
 <template>
-  <h1>{{ $t('studies') }}</h1>
-  <div v-for="(study, studyIndex) in studies" v-bind:key="studyIndex">
-    <strong>{{ study.title }}</strong>
-    <div
-      v-for="(studTodo, studyTodoIndex) in study.todo"
-      v-bind:key="studyTodoIndex"
-    >
-      {{ studTodo.title }}
-      <div
-        v-for="(studTodoTask, studyTodoTaskIndex) in studTodo.tasks"
-        v-bind:key="studyTodoTaskIndex"
-      >
-        <i>- {{ studTodoTask }}</i>
+  <v-card>
+    <v-card-title>{{ $t('studies') }}</v-card-title>
+    <v-card-text>
+      <div v-for="(study, studyIndex) in studies" v-bind:key="studyIndex">
+        <strong>{{ study.title }}</strong>
+        <div
+          v-for="(studTodo, studyTodoIndex) in study.todo"
+          v-bind:key="studyTodoIndex"
+        >
+          {{ studTodo.title }}
+          <div
+            v-for="(studTodoTask, studyTodoTaskIndex) in studTodo.tasks"
+            v-bind:key="studyTodoTaskIndex"
+          >
+            <i>- {{ studTodoTask }}</i>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">

@@ -38,7 +38,7 @@ main {
 }
 .app-content {
   position: relative;
-  margin-top: 75px;
+  margin-top: 200px;
   display: block;
 }
 </style>

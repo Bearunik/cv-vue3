@@ -1,21 +1,27 @@
 <template>
-  <h1>{{ $t('project.version') }}</h1>
-  <p>{{ version }}</p>
-  <h1>{{ $t('project.dependencies') }}</h1>
-  <v-table>
-    <thead>
-      <tr>
-        <th class="text-left">Name</th>
-        <th class="text-left">Version</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="(item, i) in dependencies" :key="i" :value="item">
-        <td>{{ i }}</td>
-        <td>{{ item.version }}</td>
-      </tr>
-    </tbody>
-  </v-table>
+  <v-card class="mb-5">
+    <v-card-title>{{ $t('project.version') }}</v-card-title>
+    <v-card-text>{{ version }}</v-card-text>
+  </v-card>
+  <v-card>
+    <v-card-title>{{ $t('project.dependencies') }}</v-card-title>
+    <v-card-text
+      ><v-table>
+        <thead>
+          <tr>
+            <th class="text-left">Name</th>
+            <th class="text-left">Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(item, i) in dependencies" :key="i" :value="item">
+            <td>{{ i }}</td>
+            <td>{{ item.version }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">

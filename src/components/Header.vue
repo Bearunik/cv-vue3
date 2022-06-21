@@ -17,6 +17,10 @@
         ></v-img>
       </v-avatar>
     </div>
+    <div class="pa-6">
+      <h1>{{ $t('welcome') }}</h1>
+      <p>{{ $t('seeyou') }}</p>
+    </div>
   </v-card>
 </template>
 

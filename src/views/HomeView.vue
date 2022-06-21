@@ -1,14 +1,14 @@
 <template>
   <v-container class="home">
     <v-row class="text-center">
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
           class="my-3"
           contain
           height="200"
         />
-      </v-col>
+      </v-col> -->
 
       <v-col class="mb-5" cols="12">
         <Skills />

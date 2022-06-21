@@ -1,8 +1,12 @@
 <template>
-  <h1>{{ $t('skills') }}</h1>
-  <div v-for="(skill, skillIndex) in skills" v-bind:key="skillIndex">
-    {{ skill.name }}
-  </div>
+  <v-card>
+    <v-card-title>{{ $t('skills') }}</v-card-title>
+    <v-card-text>
+      <div v-for="(skill, skillIndex) in skills" v-bind:key="skillIndex">
+        {{ skill.name }}
+      </div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">
