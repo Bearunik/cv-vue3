@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import packageInfos from '@/config/packagesInfos.json'
+import packageInfos from '@/configs/packagesInfos.json'
 
 @Options({
   data () {
