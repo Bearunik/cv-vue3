@@ -1,10 +1,12 @@
 <template>
-  <v-app>
-    <Header />
-    <v-main>
-      <router-view />
-    </v-main>
-    <Footer />
+  <v-app class="pa-4">
+    <main class="app-container rounded-xl">
+      <Header class="app-header rounded-t-xl" />
+      <v-content class="app-content">
+        <router-view />
+      </v-content>
+      <Footer class="rounded-b-xl" />
+    </main>
   </v-app>
 </template>
 
@@ -21,3 +23,22 @@ import Header from '@/components/Header.vue'
 })
 export default class App extends Vue {}
 </script>
+
+<style scoped>
+.v-application {
+  background: lightgray;
+}
+main {
+  background: white;
+}
+.app-header {
+  padding-bottom: 100px;
+  position: absolute;
+  width: 100%;
+}
+.app-content {
+  position: relative;
+  margin-top: 75px;
+  display: block;
+}
+</style>
