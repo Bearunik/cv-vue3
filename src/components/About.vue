@@ -5,20 +5,12 @@
   <v-table>
     <thead>
       <tr>
-        <th class="text-left">
-          Name
-        </th>
-        <th class="text-left">
-          Version
-        </th>
+        <th class="text-left">Name</th>
+        <th class="text-left">Version</th>
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="(item, i) in dependencies"
-        :key="i"
-        :value="item"
-      >
+      <tr v-for="(item, i) in dependencies" :key="i" :value="item">
         <td>{{ i }}</td>
         <td>{{ item.version }}</td>
       </tr>
@@ -46,5 +38,4 @@ import packageInfos from '@/config/packagesInfos.json'
 export default class HelloWorld extends Vue {}
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

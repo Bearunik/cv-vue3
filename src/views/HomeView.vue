@@ -5,7 +5,8 @@
       :src="require('../assets/logo.png')"
       class="my-3"
       contain
-      height="200"/>
+      height="200"
+    />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>

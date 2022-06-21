@@ -1,4 +1,4 @@
 export default interface TodoInterface {
-    title: string;
-    tasks: Array<string>;
+  title: string
+  tasks: Array<string>
 }
