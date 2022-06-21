@@ -10,7 +10,8 @@ module.exports = defineConfig({
       enableLegacy: false,
       runtimeOnly: false,
       compositionOnly: false,
-      fullInstall: true
+      fullInstall: true,
+      warnHtmlInMessage: 'off'
     },
     vuetify: {
       // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader

@@ -23,32 +23,32 @@
       "resolved": "https://registry.npmjs.org/@types/webfontloader/-/webfontloader-1.6.34.tgz"
     },
     "@typescript-eslint/eslint-plugin": {
-      "version": "5.28.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.28.0.tgz"
+      "version": "5.29.0",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.29.0.tgz"
     },
     "@typescript-eslint/parser": {
-      "version": "5.28.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.28.0.tgz"
+      "version": "5.29.0",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.29.0.tgz"
     },
     "@vue/cli-plugin-babel": {
-      "version": "5.0.5",
-      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-babel/-/cli-plugin-babel-5.0.5.tgz"
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-babel/-/cli-plugin-babel-5.0.6.tgz"
     },
     "@vue/cli-plugin-eslint": {
-      "version": "5.0.5",
-      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-eslint/-/cli-plugin-eslint-5.0.5.tgz"
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-eslint/-/cli-plugin-eslint-5.0.6.tgz"
     },
     "@vue/cli-plugin-router": {
-      "version": "5.0.5",
-      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-router/-/cli-plugin-router-5.0.5.tgz"
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-router/-/cli-plugin-router-5.0.6.tgz"
     },
     "@vue/cli-plugin-typescript": {
-      "version": "5.0.5",
-      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-typescript/-/cli-plugin-typescript-5.0.5.tgz"
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/@vue/cli-plugin-typescript/-/cli-plugin-typescript-5.0.6.tgz"
     },
     "@vue/cli-service": {
-      "version": "5.0.5",
-      "resolved": "https://registry.npmjs.org/@vue/cli-service/-/cli-service-5.0.5.tgz"
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/@vue/cli-service/-/cli-service-5.0.6.tgz"
     },
     "@vue/eslint-config-standard": {
       "version": "6.1.0",
@@ -59,8 +59,8 @@
       "resolved": "https://registry.npmjs.org/@vue/eslint-config-typescript/-/eslint-config-typescript-9.1.0.tgz"
     },
     "core-js": {
-      "version": "3.23.1",
-      "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.23.1.tgz"
+      "version": "3.23.2",
+      "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.23.2.tgz"
     },
     "eslint-plugin-import": {
       "version": "2.26.0",
