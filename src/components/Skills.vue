@@ -7,13 +7,13 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import { UserSkills } from '@/controllers/UserInfosController'
+import { UserSkillsController } from '@/controllers/UserSkillsController'
 import SkillInterface from '@/interfaces/SkillInterface'
 
 @Options({
   data () {
     return {
-      skills: UserSkills.skills
+      skills: UserSkillsController.skills
     }
   }
 })

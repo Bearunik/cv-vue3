@@ -19,13 +19,13 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import { UserStudies } from '@/controllers/UserInfosController'
+import { UserStudiesController } from '@/controllers/UserStudiesController'
 import StudyInterface from '@/interfaces/StudyInterface'
 
 @Options({
   data () {
     return {
-      studies: UserStudies.studies
+      studies: UserStudiesController.studies
     }
   }
 })

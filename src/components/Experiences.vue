@@ -19,13 +19,13 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import { UserExperiences } from '@/controllers/UserInfosController'
+import { UserExperiencesController } from '@/controllers/UserExperiencesController'
 import ExperenceInterface from '@/interfaces/ExperienceInterface'
 
 @Options({
   data () {
     return {
-      experiences: UserExperiences.experiences
+      experiences: UserExperiencesController.experiences
     }
   }
 })
