@@ -2,13 +2,20 @@
   <v-app-bar color="primary" density="compact">
     <v-toolbar-title>MITH CV</v-toolbar-title>
     <v-spacer></v-spacer>
-    <router-link to="/"><v-btn variant="text">Home</v-btn></router-link>
-    <router-link to="/about"><v-btn variant="text">About</v-btn></router-link>
-    <v-img
-      src="https://picsum.photos/512/128?image=660"
-      height="128"
-      cover
-    ></v-img>
+    <router-link to="/" class="ml-3 mr-3">
+      {{ $t('home') }}
+    </router-link>
+    <router-link to="/about" class="ml-3 mr-3">
+      {{ $t('about') }}
+    </router-link>
+    <v-avatar class="ml-3">
+      <v-img
+        src="https://picsum.photos/512/128?image=660"
+        alt="Bearunik"
+        :aspect-ratio="1"
+        cover
+      ></v-img>
+    </v-avatar>
   </v-app-bar>
 </template>
 
@@ -23,7 +30,11 @@ a {
   text-decoration: none;
   color: #2c3e50;
 }
+a .v-btn {
+  text-transform: initial;
+}
 a.router-link-exact-active {
-  color: #42b983;
+  text-decoration: underline;
+  color: white;
 }
 </style>
