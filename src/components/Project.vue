@@ -5,7 +5,7 @@
     </v-card-title>
     <v-card-text>{{ version }}</v-card-text>
   </v-card>
-  <v-card class="elevation-3">
+  <v-card class="mb-5 elevation-3">
     <v-card-title class="text-primary">
       {{ $t('project.dependencies') }}
     </v-card-title>

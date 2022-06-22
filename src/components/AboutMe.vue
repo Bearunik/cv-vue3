@@ -14,6 +14,7 @@
             :color="hobby.color"
             class="ma-2"
             size="x-large"
+            :title="hobby.title"
           >
           </v-icon>
         </v-col>
@@ -38,3 +39,9 @@ export default class Skills extends Vue {
   aboutMe!: AboutMeInterface | undefined
 }
 </script>
+
+<style scoped>
+i {
+  cursor: help;
+}
+</style>

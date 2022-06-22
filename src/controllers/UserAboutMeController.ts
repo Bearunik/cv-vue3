@@ -7,19 +7,23 @@ export abstract class UserAboutMeController {
     hobbies: [
       {
         icon: 'account-group',
-        color: 'blue'
+        color: 'blue',
+        title: i18n.global.t('icons.together')
       },
       {
         icon: 'hammer-wrench',
-        color: 'grey'
+        color: 'grey',
+        title: i18n.global.t('icons.build')
       },
       {
         icon: 'dice-d20',
-        color: 'red'
+        color: 'red',
+        title: i18n.global.t('icons.game')
       },
       {
         icon: 'palette-outline',
-        color: 'orange'
+        color: 'orange',
+        title: i18n.global.t('icons.creativiy')
       }
     ]
   } as AboutMeInterface
