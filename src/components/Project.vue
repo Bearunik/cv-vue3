@@ -1,10 +1,14 @@
 <template>
-  <v-card class="mb-5">
-    <v-card-title>{{ $t('project.version') }}</v-card-title>
+  <v-card class="mb-5 elevation-3">
+    <v-card-title class="text-primary">
+      {{ $t('project.version') }}
+    </v-card-title>
     <v-card-text>{{ version }}</v-card-text>
   </v-card>
-  <v-card>
-    <v-card-title>{{ $t('project.dependencies') }}</v-card-title>
+  <v-card class="elevation-3">
+    <v-card-title class="text-primary">
+      {{ $t('project.dependencies') }}
+    </v-card-title>
     <v-card-text
       ><v-table>
         <thead>

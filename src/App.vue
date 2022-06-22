@@ -1,6 +1,6 @@
 <template>
   <v-app class="pa-4">
-    <main class="app-container rounded-xl">
+    <main class="app-container rounded-xl elevation-10">
       <Header class="app-header rounded-t-xl" />
       <v-content class="app-content">
         <router-view />

@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="primary" class="d-flex flex-column">
+  <v-footer color="primary" class="d-flex flex-column pb-5">
     <div>
       <v-btn
         v-for="icon in icons"

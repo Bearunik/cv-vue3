@@ -1,14 +1,14 @@
 <template>
   <v-card color="primary" class="rounded-b-0 elevation-0">
-    <div class="d-flex px-6 py-4">
+    <v-container class="d-flex px-6 py-4 pt-5">
       <div class="pa-2 mr-auto">MITH CV</div>
-      <router-link to="/" class="ml-3 pa-2" outlined tile>
+      <router-link to="/" class="mr-5 my-2" outlined tile>
         {{ $t('home') }}
       </router-link>
-      <router-link to="/about" class="ml-3 pa-2" outlined tile>
+      <router-link to="/about" class="mr-5 my-2" outlined tile>
         {{ $t('about') }}
       </router-link>
-      <v-avatar class="ml-3 elevation-5" outlined tile>
+      <v-avatar class="elevation-5" outlined tile>
         <v-img
           src="https://picsum.photos/512/128?image=660"
           alt="Bearunik"
@@ -16,11 +16,11 @@
           cover
         ></v-img>
       </v-avatar>
-    </div>
-    <div class="pa-6">
+    </v-container>
+    <v-container class="pa-6">
       <h1>{{ $t('welcome') }}</h1>
       <p>{{ $t('seeyou') }}</p>
-    </div>
+    </v-container>
   </v-card>
 </template>
 

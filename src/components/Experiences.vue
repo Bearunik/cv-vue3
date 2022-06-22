@@ -1,6 +1,6 @@
 <template>
-  <v-card>
-    <v-card-title>{{ $t('experiences') }}</v-card-title>
+  <v-card class="elevation-3">
+    <v-card-title class="text-primary">{{ $t('experiences') }}</v-card-title>
     <v-card-text>
       <div v-for="(experience, ExpIndex) in experiences" v-bind:key="ExpIndex">
         <strong>{{ experience.title }}</strong>
