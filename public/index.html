@@ -7,6 +7,16 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <style>
+      *::-moz-selection {
+        /* Code for Firefox */
+        color: black;
+        background: lightcyan;
+      }
+      *::selection {
+        color: black;
+        background: lightcyan;
+      }
+
       html {
         min-width: 430px;
       }
