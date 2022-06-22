@@ -3,24 +3,24 @@ import SkillInterface, { skillCategory } from '@/interfaces/SkillInterface'
 export abstract class UserSkillsController {
   public static skills = [
     {
-      name: 'Jenkins',
-      category: skillCategory.ENVIRONMENT,
-      src: '@/assets/logo.png'
+      name: 'Agilité',
+      category: skillCategory.ORGANISATION,
+      src: require('@/assets/skills/agile.png')
     },
     {
-      name: 'Jenkins2',
-      category: skillCategory.ENVIRONMENT,
-      src: '@/assets/logo.png'
+      name: 'Jira',
+      category: skillCategory.ORGANISATION,
+      src: require('@/assets/skills/jira.png')
     },
     {
-      name: 'Jenkins3',
-      category: skillCategory.ENVIRONMENT,
-      src: '@/assets/logo.png'
+      name: 'Suite Office',
+      category: skillCategory.ORGANISATION,
+      src: require('@/assets/skills/office.png')
     },
     {
-      name: 'Jenkins4',
-      category: skillCategory.ENVIRONMENT,
-      src: '@/assets/logo.png'
+      name: 'Asciidoc',
+      category: skillCategory.ORGANISATION,
+      src: require('@/assets/skills/ascii.png')
     }
   ] as Array<SkillInterface>
 }

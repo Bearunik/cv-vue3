@@ -1,6 +1,6 @@
 export enum skillCategory {
   ENVIRONMENT,
-  NETWORK,
+  ORGANISATION,
   LANGAGE,
   OS,
   FRAMEWORK,
