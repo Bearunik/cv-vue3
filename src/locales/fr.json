@@ -17,5 +17,11 @@
     "build": "Bricolage",
     "game": "Jeux en équipe",
     "creativiy": "Créativité"
-  }
+  },
+  "environment": "Environnement",
+  "organisation": "Oraganisation",
+  "langage": "Language",
+  "os": "Système d'exploitation",
+  "framework": "Framework",
+  "data": "Donnée"
 }

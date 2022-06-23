@@ -2,13 +2,23 @@
   <v-card class="elevation-3">
     <v-card-title class="text-primary">{{ $t('skills') }}</v-card-title>
     <v-card-text>
-      <v-row class="text-center" no-gutters>
-        <v-col
-          class="d-flex justify-center"
-          v-for="(skill, skillIndex) in skills"
-          v-bind:key="skillIndex"
-        >
-          <v-img class="ma-2 skill-icon" :src="skill.src" :title="skill.name" />
+      <v-row
+        v-for="(category, categoryIndex) in skills"
+        v-bind:key="categoryIndex"
+        :class="{ 'mb-5': categoryIndex + 1 < skills.length }"
+        no-gutters
+      >
+        <v-col>
+          {{ getCategoryName(categoryIndex) }}
+          <v-row>
+            <v-img
+              v-for="(skill, skillIndex) in category"
+              v-bind:key="skillIndex"
+              class="ma-2 skill-icon"
+              :src="skill.src"
+              :title="skill.name"
+            />
+          </v-row>
         </v-col>
       </v-row>
     </v-card-text>
@@ -18,16 +28,20 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
 import { UserSkillsController } from '@/controllers/UserSkillsController'
-import SkillInterface from '@/interfaces/SkillInterface'
+import SkillInterface, { skillCategory } from '@/interfaces/SkillInterface'
+import { groupByObject } from '@/tools/array'
+import i18n from '@/i18n'
 
 @Options({
-  data () {
-    return {
-      skills: UserSkillsController.skills
+  computed: {
+    skills () {
+      return groupByObject(UserSkillsController.skills, 'category')
     }
   },
-  mounted () {
-    console.log(this.skills)
+  methods: {
+    getCategoryName (category: number): string {
+      return i18n.global.t(skillCategory[category].toLowerCase())
+    }
   }
 })
 export default class Skills extends Vue {

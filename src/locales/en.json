@@ -17,5 +17,11 @@
     "build": "Build",
     "game": "Team games",
     "creativiy": "Creativity"
-  }
+  },
+  "environment": "Environment",
+  "organisation": "Oraganisation",
+  "langage": "Langage",
+  "os": "Operating system",
+  "framework": "Framework",
+  "data": "Data"
 }
