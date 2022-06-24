@@ -5,19 +5,31 @@
       <v-row
         v-for="(category, categoryIndex) in skills"
         v-bind:key="categoryIndex"
-        :class="{ 'mb-5': categoryIndex + 1 < skills.length }"
+        :class="{
+          'mb-2': parseInt(categoryIndex) + 1 < Object.keys(skills).length
+        }"
         no-gutters
       >
         <v-col>
-          {{ getCategoryName(categoryIndex) }}
-          <v-row>
-            <v-img
+          <v-row wrap no-gutters>
+            <v-col cols="12"> {{ getCategoryName(categoryIndex) }} </v-col>
+            <v-col cols="12">
+              <v-divider />
+            </v-col>
+          </v-row>
+
+          <v-row no-gutters>
+            <v-col
               v-for="(skill, skillIndex) in category"
               v-bind:key="skillIndex"
-              class="ma-2 skill-icon"
-              :src="skill.src"
-              :title="skill.name"
-            />
+              cols="3"
+            >
+              <v-img
+                class="ma-2 skill-icon"
+                :src="skill.src"
+                :title="skill.name"
+              />
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
