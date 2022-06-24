@@ -3,8 +3,8 @@
     <v-card-title class="text-primary">{{ $t('about-me') }}</v-card-title>
     <v-card-text>
       "{{ aboutMe.text }}"
-      <v-spacer class="ma-3"></v-spacer>
       <v-row class="text-center" no-gutters>
+        <v-divider class="my-4" />
         <v-col
           v-for="(hobby, hobbyIndex) in aboutMe.hobbies"
           v-bind:key="hobbyIndex"
@@ -35,7 +35,7 @@ import AboutMeInterface from '@/interfaces/AboutMeInterface'
     }
   }
 })
-export default class Skills extends Vue {
+export default class AboutMe extends Vue {
   aboutMe!: AboutMeInterface | undefined
 }
 </script>

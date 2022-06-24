@@ -11,7 +11,7 @@
         no-gutters
       >
         <v-col>
-          <v-row wrap no-gutters>
+          <v-row wrap no-gutters class="mb-2">
             <v-col cols="12"> {{ getCategoryName(categoryIndex) }} </v-col>
             <v-col cols="12">
               <v-divider />

@@ -7,6 +7,7 @@
       </v-col>
 
       <v-col cols="12" sm="4">
+        <Contact class="mb-5" />
         <AboutMe class="mb-5" />
         <Skills class="mb-5" />
       </v-col>
@@ -29,9 +30,10 @@ import Experiences from '@/components/Experiences.vue'
 import Studies from '@/components/Studies.vue'
 import Skills from '@/components/Skills.vue'
 import AboutMe from '@/components/AboutMe.vue'
+import Contact from '@/components/Contact.vue'
 
 @Options({
-  components: { Experiences, Skills, Studies, AboutMe }
+  components: { Experiences, Studies, Contact, AboutMe, Skills }
 })
 export default class HomeView extends Vue {}
 </script>

@@ -3,6 +3,8 @@ import AboutMeInterface from '@/interfaces/AboutMeInterface'
 
 export abstract class UserAboutMeController {
   public static aboutMe = {
+    mail: 'mickael@mms-family.fr',
+    location: 'Rennes',
     text: i18n.global.t('my-description'),
     hobbies: [
       {
