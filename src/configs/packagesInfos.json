@@ -82,6 +82,10 @@
       "version": "7.32.0",
       "resolved": "https://registry.npmjs.org/eslint/-/eslint-7.32.0.tgz"
     },
+    "hex-rgb": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/hex-rgb/-/hex-rgb-5.0.0.tgz"
+    },
     "roboto-fontface": {
       "version": "0.10.0",
       "resolved": "https://registry.npmjs.org/roboto-fontface/-/roboto-fontface-0.10.0.tgz"

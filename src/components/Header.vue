@@ -1,6 +1,6 @@
 <template>
   <v-card color="primary" class="rounded-b-0 elevation-0">
-    <v-container class="d-flex px-6 py-4 pt-5">
+    <v-container class="d-flex px-6 py-4 pt-5 text-white">
       <div class="pa-2 mr-auto">MITH CV</div>
       <router-link to="/" class="mr-5 my-2" outlined tile>
         {{ $t('home') }}
@@ -17,9 +17,9 @@
         ></v-img>
       </v-avatar>
     </v-container>
-    <v-container class="pa-6">
+    <v-container class="pa-6 text-white">
       <h1>{{ $t('welcome') }}</h1>
-      <p>{{ $t('seeyou') }}</p>
+      {{ $t('seeyou') }}
     </v-container>
   </v-card>
 </template>
@@ -33,7 +33,8 @@ export default class Header extends Vue {}
 <style scoped>
 a {
   text-decoration: none;
-  color: #2c3e50;
+  color: white;
+  font-weight: bold;
 }
 a .v-btn {
   text-transform: initial;
