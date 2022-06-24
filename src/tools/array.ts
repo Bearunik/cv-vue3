@@ -1,17 +1,9 @@
-export function groupByObject (collection: any, property: string) {
-  let i = 0
-  let val
-  let index
-  const values = []
-  const result = []
-  for (; i < collection.length; i++) {
-    val = collection[i][property]
-    index = values.indexOf(val)
-    if (index > -1) result[index].push(collection[i])
-    else {
-      values.push(val)
-      result.push([collection[i]])
-    }
-  }
-  return result
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function groupByObject (collection: any, property: string): Array<any> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return collection.reduce((objectsByKeyValue: any, obj: any) => {
+    const value = obj[property]
+    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj)
+    return objectsByKeyValue
+  }, {})
 }

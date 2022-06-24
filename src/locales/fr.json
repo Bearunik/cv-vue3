@@ -23,5 +23,6 @@
   "langage": "Language",
   "os": "Système d'exploitation",
   "framework": "Framework",
-  "data": "Donnée"
+  "data": "Donnée",
+  "technology": "Technologie"
 }

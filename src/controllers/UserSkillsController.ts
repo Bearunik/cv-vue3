@@ -94,17 +94,17 @@ export abstract class UserSkillsController {
     },
     {
       name: 'Docker',
-      category: skillCategory.TECHNOLOGY,
+      category: skillCategory.ENVIRONMENT,
       src: require('@/assets/skills/docker.png')
     },
     {
       name: 'Gitlab',
-      category: skillCategory.TECHNOLOGY,
+      category: skillCategory.ENVIRONMENT,
       src: require('@/assets/skills/gitlab.png')
     },
     {
       name: 'Jenkins',
-      category: skillCategory.TECHNOLOGY,
+      category: skillCategory.ENVIRONMENT,
       src: require('@/assets/skills/jenkins.png')
     },
     {
