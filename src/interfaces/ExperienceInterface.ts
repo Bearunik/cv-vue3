@@ -2,8 +2,8 @@ import TodoInterface from './TodoInterface'
 
 export enum experienceType {
   ALTERNATELY,
-  FIXED_TERM,
-  TEMPORARY
+  FIXED_TERMS,
+  PERMANENT
 }
 
 export default interface ExperenceInterface {

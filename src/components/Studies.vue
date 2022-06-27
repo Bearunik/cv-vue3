@@ -42,7 +42,8 @@ import i18n from '@/i18n'
           title: study.title,
           subtitle: this.getTypeName(study.type),
           color: study.color,
-          subitems: subItems
+          subitems: subItems,
+          icon: 'mdi-school'
         } as Item)
       })
       return list

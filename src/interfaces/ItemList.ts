@@ -8,6 +8,7 @@ export interface Item {
   subtitle: string
   color: string
   subitems: Array<SubItem>
+  icon: string
 }
 
 export interface ItemList {

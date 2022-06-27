@@ -18,7 +18,7 @@
           :style="{ 'background-color': item.color }"
         >
           <strong>{{ item.title }}</strong>
-          <v-icon icon="mdi-school" class="ml-5"></v-icon>
+          <v-icon :icon="item.icon" class="ml-5"></v-icon>
         </div>
         <div
           class="py-3 px-4 pl-12 rounded-pill item-subtitle"
@@ -109,6 +109,10 @@ export default class ExpandedList extends Vue {
   box-shadow: 0;
   border: 0;
   border-radius: 0;
+}
+
+.v-expansion-panel-title__icon::v-deep {
+  display: none !important;
 }
 
 .item-chevron {
