@@ -30,6 +30,7 @@
                 class="ma-2 skill-icon"
                 :src="skill.src"
                 :title="skill.name"
+                @click="openLink(skill.url)"
               />
             </v-col>
           </v-row>
@@ -55,6 +56,11 @@ import i18n from '@/i18n'
   methods: {
     getCategoryName (category: number): string {
       return i18n.global.t(skillCategory[category].toLowerCase())
+    },
+    openLink (url: string): void {
+      if (url) {
+        window.open(url, '_blank')
+      }
     }
   }
 })

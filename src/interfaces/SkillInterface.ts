@@ -11,5 +11,6 @@ export enum skillCategory {
 export default interface SkillInterface {
   name: string
   category: skillCategory
-  src: string
+  src: string,
+  url?: string
 }
