@@ -2,14 +2,14 @@
   <v-expansion-panels
     v-if="list.items"
     variant="accordion"
-    multiple="true"
+    multiple
     v-model="panel"
   >
     <v-expansion-panel
       v-for="(item, itemIndex) in list.items"
       v-bind:key="itemIndex"
       elevation="0"
-      eager="true"
+      eager
       ripple
     >
       <v-expansion-panel-title :class="{ 'pt-0': itemIndex == 0 }">
