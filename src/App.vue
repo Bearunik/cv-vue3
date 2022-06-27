@@ -1,11 +1,13 @@
 <template>
   <v-app class="pa-4">
-    <main class="app-container rounded-xl elevation-10">
-      <Header class="app-header rounded-t-xl" />
-      <v-content class="app-content">
-        <router-view />
-      </v-content>
-      <Footer class="rounded-b-xl" />
+    <main class="d-flex justify-center">
+      <div class="app-container rounded-xl elevation-10">
+        <Header class="app-header rounded-t-xl" />
+        <v-content class="app-content">
+          <router-view />
+        </v-content>
+        <Footer class="rounded-b-xl" />
+      </div>
     </main>
   </v-app>
 </template>
@@ -28,8 +30,10 @@ export default class App extends Vue {}
 .v-application {
   background: lightgray;
 }
-main {
+.app-container {
   background: white;
+  position: relative;
+  max-width: 1150px;
 }
 .app-header {
   padding-bottom: 100px;
