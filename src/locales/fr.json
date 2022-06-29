@@ -31,5 +31,9 @@
   "os": "Système d'exploitation",
   "framework": "Framework",
   "data": "Donnée",
-  "technology": "Technologie"
+  "technology": "Technologie",
+  "not-found": {
+    "title": "Page non trouvée",
+    "desc": "Désolé, la page demandée n'existe pas sur ce site web."
+  }
 }

@@ -46,7 +46,7 @@
             v-for="(subItemDesc, subItemDescIndex) in subItem.descriptions"
             v-bind:key="subItemDescIndex"
           >
-            <i>- {{ subItemDesc }}</i>
+            - {{ subItemDesc }}
           </div>
         </div>
       </v-expansion-panel-text>

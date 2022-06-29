@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "npm ls --json > src/configs/packagesInfos.json",
+    "postinstall": "npm ls --json > src/configs/packagesInfos.json",
+    "preserve": "npm ls --json > src/configs/packagesInfos.json",
+    "prebuild": "npm ls --json > src/configs/packagesInfos.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -25,6 +27,7 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@intlify/vue-i18n-loader": "^3.0.0",
+    "@types/node": "^18.0.0",
     "@types/webfontloader": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",

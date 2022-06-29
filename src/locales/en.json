@@ -31,5 +31,9 @@
   "os": "Operating system",
   "framework": "Framework",
   "data": "Data",
-  "technology": "Technology"
+  "technology": "Technology",
+  "not-found": {
+    "title": "Page not found",
+    "desc": "Sorry, this page doen't exist on this website."
+  }
 }

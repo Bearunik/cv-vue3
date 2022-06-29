@@ -18,6 +18,10 @@
       "version": "5.9.55",
       "resolved": "https://registry.npmjs.org/@mdi/font/-/font-5.9.55.tgz"
     },
+    "@types/node": {
+      "version": "18.0.0",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-18.0.0.tgz"
+    },
     "@types/webfontloader": {
       "version": "1.6.34",
       "resolved": "https://registry.npmjs.org/@types/webfontloader/-/webfontloader-1.6.34.tgz"

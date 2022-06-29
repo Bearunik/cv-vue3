@@ -31,7 +31,6 @@ export default class App extends Vue {}
   background: white;
   position: relative;
   max-width: 1000px;
-  min-height: 250px;
   width: 100%;
 }
 .app-header {
