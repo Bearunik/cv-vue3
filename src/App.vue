@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pa-2">
+  <v-app class="pa-2 bg-secondary">
     <main class="d-flex justify-center">
       <div class="app-container rounded-xl elevation-10">
         <Header class="app-header rounded-t-xl" />
@@ -27,13 +27,11 @@ export default class App extends Vue {}
 </script>
 
 <style scoped>
-.v-application {
-  background: lightgray;
-}
 .app-container {
   background: white;
   position: relative;
   max-width: 1000px;
+  min-height: 250px;
   width: 100%;
 }
 .app-header {

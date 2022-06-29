@@ -10,9 +10,9 @@ const myTheme = {
   colors: {
     background: '#FFFFFF',
     surface: '#FFFFFF',
-    primary: '#00bcd4',
+    primary: '#278197',
     'primary-darken-1': '#3700B3',
-    secondary: '#cddc39',
+    secondary: '#b0ddf2',
     'secondary-darken-1': '#018786',
     accent: '#3f51b5',
     error: '#f44336',

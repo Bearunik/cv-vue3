@@ -1,7 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-
   pluginOptions: {
     i18n: {
       locale: 'fr',
@@ -12,9 +11,6 @@ module.exports = defineConfig({
       compositionOnly: false,
       fullInstall: true,
       warnHtmlInMessage: 'off'
-    },
-    vuetify: {
-      // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
     }
   }
 })

@@ -1,0 +1,71 @@
+# cv-vue3
+
+## Project setup
+
+### With docker
+
+#### Dev env
+
+Build:
+
+```
+docker-compose build dev
+```
+
+Run: 
+
+```
+docker-compose up dev
+```
+
+#### Prod env
+
+Build:
+
+```
+docker-compose build prod
+```
+
+Run: 
+
+```
+docker-compose up prod
+```
+
+### Without docker
+
+Install dependencies: 
+
+```
+npm install
+```
+
+#### Dev env
+
+Compiles and hot-reloads:
+
+```
+npm run serve
+```
+
+#### Prod env
+
+Compiles and minifies:
+
+```
+npm run build
+```
+
+#### Tools
+
+Lints and fixes files:
+
+```
+npm run lint
+```
+
+I18n report:
+
+```
+npm run i18n:report
+```
