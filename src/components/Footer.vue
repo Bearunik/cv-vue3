@@ -9,8 +9,6 @@
         variant="text"
       ></v-btn>
     </div>
-    <div class="text-white pt-0">MITH CV</div>
-    <v-divider></v-divider>
     <div class="text-white">
       {{ new Date().getFullYear() }} — <strong>Mickaël THERAUD</strong>
     </div>
@@ -23,7 +21,7 @@ import { Options, Vue } from 'vue-class-component'
 @Options({
   data () {
     return {
-      icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram']
+      icons: ['mdi-github', 'mdi-twitter', 'mdi-linkedin']
     }
   }
 })

@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pa-4">
+  <v-app class="pa-2">
     <main class="d-flex justify-center">
       <div class="app-container rounded-xl elevation-10">
         <Header class="app-header rounded-t-xl" />
