@@ -70,6 +70,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
 import InputText from '@/components/InputText.vue'
+import { UserAboutMeController } from '@/controllers/UserAboutMeController'
 import i18n from '@/i18n'
 
 @Options({
@@ -85,7 +86,7 @@ import i18n from '@/i18n'
       const subject =
         'subject=' + encodeURIComponent(i18n.global.t('mail-subject'))
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      window.location.href = `mailto:mickael@mms-family.fr?${body}&${subject}`
+      window.location.href = `mailto:${UserAboutMeController.aboutMe.mail}?${body}&${subject}`
     }
   }
 })
