@@ -66,6 +66,10 @@
       "version": "3.23.2",
       "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.23.2.tgz"
     },
+    "cypress": {
+      "version": "10.3.0",
+      "resolved": "https://registry.npmjs.org/cypress/-/cypress-10.3.0.tgz"
+    },
     "eslint-plugin-import": {
       "version": "2.26.0",
       "resolved": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.26.0.tgz"
