@@ -10,7 +10,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(ts|vue)\" --locales \"./src/locales/**/*.json\"",
-    "cy:run": "cypress run --spec 'cypress/e2e/tests.cy.ts'"
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",

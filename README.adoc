@@ -69,3 +69,9 @@ I18n report:
 ```
 npm run i18n:report
 ```
+
+Tests e2e:
+
+```
+npm run cy:run
+```
