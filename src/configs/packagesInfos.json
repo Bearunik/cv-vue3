@@ -94,6 +94,10 @@
       "version": "5.0.0",
       "resolved": "https://registry.npmjs.org/hex-rgb/-/hex-rgb-5.0.0.tgz"
     },
+    "release-it": {
+      "version": "15.1.1",
+      "resolved": "https://registry.npmjs.org/release-it/-/release-it-15.1.1.tgz"
+    },
     "roboto-fontface": {
       "version": "0.10.0",
       "resolved": "https://registry.npmjs.org/roboto-fontface/-/roboto-fontface-0.10.0.tgz"
