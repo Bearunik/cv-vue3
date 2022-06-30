@@ -44,8 +44,10 @@ import { Options, Vue } from 'vue-class-component'
   },
   methods: {
     submited (): void {
-      this.$emit('submit', this.value)
-      this.value = ''
+      if (this.value !== '') {
+        this.$emit('submited', this.value)
+        this.value = ''
+      }
     }
   }
 })

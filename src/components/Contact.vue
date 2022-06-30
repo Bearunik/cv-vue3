@@ -24,8 +24,8 @@
 
 <script lang="ts">
 import { UserAboutMeController } from '@/controllers/UserAboutMeController'
-import i18n from '@/i18n'
 import { Vue, Options } from 'vue-class-component'
+import { sendMail } from '@/tools/mail'
 
 @Options({
   data () {
@@ -36,9 +36,7 @@ import { Vue, Options } from 'vue-class-component'
   },
   methods: {
     openMail (): void {
-      const subject =
-        'subject=' + encodeURIComponent(i18n.global.t('mail-subject'))
-      window.location.href = `mailto:${this.mail}?${subject}`
+      sendMail('')
     }
   }
 })

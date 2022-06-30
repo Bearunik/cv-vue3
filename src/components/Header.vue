@@ -13,7 +13,7 @@
             <InputText
               :placeholder="$t('have-question')"
               icon="mdi-magnify"
-              @submit="submited"
+              @submited="submited"
               :style="{ size: inputSize }"
             />
             <div class="d-sm-none ml-2 header-manu-burger">
@@ -70,8 +70,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
 import InputText from '@/components/InputText.vue'
-import { UserAboutMeController } from '@/controllers/UserAboutMeController'
-import i18n from '@/i18n'
+import { sendMail } from '@/tools/mail'
 
 @Options({
   data () {
@@ -82,11 +81,7 @@ import i18n from '@/i18n'
   components: { InputText },
   methods: {
     submited (value: string): void {
-      const body = 'body=' + encodeURIComponent(value)
-      const subject =
-        'subject=' + encodeURIComponent(i18n.global.t('mail-subject'))
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      window.location.href = `mailto:${UserAboutMeController.aboutMe.mail}?${body}&${subject}`
+      sendMail(value)
     }
   }
 })
