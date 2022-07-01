@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm ls --json > src/configs/packagesInfos.json",
-    "preserve": "npm ls --json > src/configs/packagesInfos.json",
-    "prebuild": "npm ls --json > src/configs/packagesInfos.json",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "release": "release-it",
+    "generatePackageInfo": "npm ls --json > src/configs/packagesInfos.json",
+    "postinstall": "npm run generatePackageInfo",
+    "serve": "npm run generatePackageInfo && vue-cli-service serve",
+    "build": "npm run generatePackageInfo && vue-cli-service build",
+    "release": "npm run generatePackageInfo && release-it",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(ts|vue)\" --locales \"./src/locales/**/*.json\"",
     "cy:run": "cypress run"
