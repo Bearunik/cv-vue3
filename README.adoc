@@ -56,7 +56,7 @@ Compiles and minifies:
 npm run build
 ```
 
-#### Tools
+### Tools
 
 Lints and fixes files:
 
@@ -70,8 +70,14 @@ I18n report:
 npm run i18n:report
 ```
 
+Tests unit:
+
+```
+npm run test:unit
+```
+
 Tests e2e:
 
 ```
-npm run cy:run
+npm run test:e2e
 ```
