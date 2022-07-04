@@ -1,5 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function groupByObject (collection: any, property: string): Array<any> {
+export function groupByObject (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  collection: Array<any>,
+  property: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): any {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return collection.reduce((objectsByKeyValue: any, obj: any) => {
     const value = obj[property]
