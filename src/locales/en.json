@@ -1,7 +1,7 @@
 {
   "have-question": "Do you have question? Don't hesitate to ask!",
   "mail-subject": "Contact via your web resume",
-  "welcome": "Welcome to my Profile,",
+  "welcome": "Welcome to my profile,",
   "seeyou": "I'm glad to see you soon, don't hesitate to text me!",
   "home": "Home",
   "about": "About",
@@ -35,7 +35,7 @@
   "fixed_terms": "Fixed terms",
   "permanent": "Parmanent",
   "experiences": {
-    "title": "Experiences",
+    "title": "Professional experience",
     "jobs": {
       "scrum": "Scrum Master - Team manager",
       "fullstack": "Web developer, Fullstack",
@@ -76,7 +76,7 @@
     }
   },
   "studies": {
-    "title": "Studies",
+    "title": "Education",
     "levels": {
       "master": "Master's & Bachelor's degree",
       "bts": "Advanced technician's certificate",
