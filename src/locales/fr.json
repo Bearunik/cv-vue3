@@ -10,12 +10,6 @@
     "dependencies": "Dépendences"
   },
   "skills": "Savoirs",
-  "studies": "Etudes",
-  "alternately": "Alternance",
-  "continous": "Formation continue",
-  "experiences": "Experiences",
-  "fixed_term": "CDD",
-  "permanent": "CDI",
   "contact": "Contact",
   "about-me": "A propos",
   "my-description": "Curieux et passionné dans les domaines de la tech et  l'innovation, j'aime partager mes idées afin de faire évoluer un projet et apprecie travailler dans un cadre où il fait bon travailler. Pour moi, le partage est le maître mot, peu importe les domaines, car c'est ce qui nous rend plus fort au quotidien.",
@@ -35,5 +29,82 @@
   "not-found": {
     "title": "Page non trouvée",
     "desc": "Désolé, la page demandée n'existe pas sur ce site web."
+  },
+  "alternately": "Alternance",
+  "continous": "Formation continue",
+  "fixed_term": "CDD",
+  "permanent": "CDI",
+  "experiences": {
+    "title": "Experiences",
+    "jobs": {
+      "scrum": "Scrum Master - Manager d'équipe",
+      "fullstack": "Développeur web, Fullstack",
+      "other": "Autre"
+    },
+    "ama": {
+      "title": "AMA",
+      "todo1": {
+        "task1": "Participation à la mise en place de l'agilité au niveau de la R&D",
+        "task2": "Gestion de la bonne pratique à l'agilité au sein d'une équipe de 8 pers.",
+        "task3": "Recrutements et passage d'entretiens trimestriels des membres de l'équipe",
+        "task4": "Participation à la mise en place de l'agilité à l'échelle (Méthode SAFE)"
+      },
+      "todo2": {
+        "task1": "Produit XpertEye, solution sur lunettes connectées (VueJS, TS, WebRTC)",
+        "task2": "Mise en place de briques techniques (Keycloak, Salesforce, Crowdin)",
+        "task3": "Partage et accompagnement sur les bonnes pratiques de dev (CI/CD, TU)",
+        "task4": "Maintenance et refactoring technique"
+      },
+      "todo3": {
+        "task1": "Gestionnaire de la ludothèque R&D",
+        "task2": "Coordinateur RSE R&D"
+      }
+    },
+    "oatic": {
+      "title": "OATIC",
+      "todo1": {
+        "task1": "Produit Mookitek, créateur d'exercices interactifs en ligne",
+        "task2": "Projets applicatifs pour des clients externes (Backbone, Ruby on rails)"
+      }
+    },
+    "enscr": {
+      "title": "ENSCR",
+      "todo1": {
+        "task1": "Projets web de gestion (interne)",
+        "task2": "Gestion du parc informatique"
+      }
+    }
+  },
+  "studies": {
+    "title": "Etudes",
+    "levels": {
+      "master": "Licence & Master (BAC + 5)",
+      "bts": "BTS (BAC +2)",
+      "bac": "Bac Professionnel"
+    },
+    "imie" : {
+      "title": "IMIE",
+      "todo": {
+        "task1" : "Licence CDPN (Concepteur Développeur en Projet Numérique)",
+        "task2" : "Master EEDSI (Expert en Etudes et Développement du Système d'Information)",
+        "task3" : "Participation au programme « les Entreprenariales »",
+        "task4" : "Alternance avec la société « OATIC »"
+      }
+    },
+    "aftec" : {
+      "title": "AFTEC",
+      "todo": {
+        "task1" : "BTS SIO (Services Informatiques aux Organisations)",
+        "task2" : "Spécialité SLAM (Solution Logiciel et Application Métier)",
+        "task3" : "Alternance avec l'école « ENSCR »"
+      }
+    },
+    "coetlogon" : {
+      "title": "Coëtlogon",
+      "todo": {
+        "task1" : "Bac Pro SEN (Système Electronique et Numérique)",
+        "task2" : "Spécialité TR (Télécom et Réseaux)"
+      }
+    }
   }
 }

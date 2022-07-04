@@ -2,7 +2,7 @@
   <v-card class="elevation-3">
     <v-card-title class="text-primary">{{ $t('about-me') }}</v-card-title>
     <v-card-text>
-      "{{ aboutMe.text }}"
+      {{ aboutMe.text }}
       <v-row class="text-center" no-gutters>
         <v-divider class="my-4" />
         <v-col

@@ -10,15 +10,9 @@
     "dependencies": "Dependencies"
   },
   "skills": "Skills",
-  "studies": "Studies",
-  "alternately": "Alternately",
-  "continous": "Continous",
-  "experiences": "Experiences",
-  "fixed_terms": "Fixed terms",
-  "permanent": "Parmanent",
   "contact": "Contact",
   "about-me": "About me",
-  "my-description": "<TODO>",
+  "my-description": "Curious and passionate about technologies and innovation, I like to share my ideas in order to make a project evolves. I really appreciate working in a good vibes environment. Sharing is the key word for me because it's what makes us stronger every day.",
   "icons": {
     "together": "Assistance",
     "build": "Build",
@@ -35,5 +29,82 @@
   "not-found": {
     "title": "Page not found",
     "desc": "Sorry, this page doen't exist on this website."
+  },
+  "alternately": "Alternately",
+  "continous": "Continous",
+  "fixed_terms": "Fixed terms",
+  "permanent": "Parmanent",
+  "experiences": {
+    "title": "Experiences",
+    "jobs": {
+      "scrum": "Scrum Master - Team manager",
+      "fullstack": "Web developer, Fullstack",
+      "other": "Other"
+    },
+    "ama": {
+      "title": "AMA",
+      "todo1": {
+        "task1": "Introduction of agility at the R&D level",
+        "task2": "Management of good practices about agility within a team of 8 people",
+        "task3": "Recruiting and interviewing team members",
+        "task4": "Introduction of agility at scale (SAFE Method)"
+      },
+      "todo2": {
+        "task1": "Product XpertEye, project running on connected glasses (VueJS, TS, WebRTC)",
+        "task2": "Implementation of technical bricks (Keycloak, Salesforce, Crowdin)",
+        "task3": "Sharing and coaching about good dev practices (CI/CD, TU)",
+        "task4": "Maintenance and technical refactoring"
+      },
+      "todo3": {
+        "task1": "R&D toy library manager",
+        "task2": "R&D CSR Coordinator"
+      }
+    },
+    "oatic": {
+      "title": "OATIC",
+      "todo1": {
+        "task1": "Product Mookitek, creator of interactive exercises online",
+        "task2": "Software projects for external clients (Backbone, Ruby on rails)"
+      }
+    },
+    "enscr": {
+      "title": "ENSCR",
+      "todo1": {
+        "task1": "Web management projects (internal)",
+        "task2": "IT asset management"
+      }
+    }
+  },
+  "studies": {
+    "title": "Studies",
+    "levels": {
+      "master": "Master's & Bachelor's degree",
+      "bts": "Advanced technician's certificate",
+      "bac": "Vocational baccalauréat"
+    },
+    "imie" : {
+      "title": "IMIE",
+      "todo": {
+        "task1" : "Bachelor's « CDPN (Concepteur Développeur en Projet Numérique) »",
+        "task2" : "Master's « EEDSI (Expert en Etudes et Développement du Système d'Information) »",
+        "task3" : "« les Entreprenariales » program",
+        "task4" : "Alternately with « OATIC »"
+      }
+    },
+    "aftec" : {
+      "title": "AFTEC",
+      "todo": {
+        "task1" : "Advanced technician's certificate « SIO (Services Informatiques aux Organisations) »",
+        "task2" : "Speciality « SLAM (Solution Logiciel et Application Métier) »",
+        "task3" : "Alternately with « ENSCR »"
+      }
+    },
+    "coetlogon" : {
+      "title": "Coëtlogon",
+      "todo": {
+        "task1" : "Vocational baccalauréat « SEN (Système Electronique et Numérique) »",
+        "task2" : "Speciality « TR (Télécom et Réseaux) »"
+      }
+    }
   }
 }

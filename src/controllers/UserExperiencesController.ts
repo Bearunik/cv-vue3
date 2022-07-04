@@ -1,3 +1,4 @@
+import i18n from '@/i18n'
 import ExperenceInterface, {
   experienceType
 } from '@/interfaces/ExperienceInterface'
@@ -5,29 +6,32 @@ import ExperenceInterface, {
 export abstract class UserExperiencesController {
   public static experiences = [
     {
-      title: 'AMA',
+      title: i18n.global.t('experiences.ama.title'),
       todo: [
         {
-          title: "Scrum Master - Manager d'équipe",
+          title: i18n.global.t('experiences.jobs.scrum'),
           tasks: [
-            "Participation à la mise en place de l'agilité au niveau de la R&D",
-            "Gestion de la bonne pratique à l'agilité au sein d'une équipe de 8 pers.",
-            "Recrutements et passage d'entretiens trimestriels des membres de l'équipe",
-            "Participation à la mise en place de l'agilité à l'échelle (Méthode SAFE)"
+            i18n.global.t('experiences.ama.todo1.task1'),
+            i18n.global.t('experiences.ama.todo1.task2'),
+            i18n.global.t('experiences.ama.todo1.task3'),
+            i18n.global.t('experiences.ama.todo1.task4')
           ]
         },
         {
-          title: 'Développeur web, Fullstack',
+          title: i18n.global.t('experiences.jobs.fullstack'),
           tasks: [
-            'Produit XpertEye, solution sur lunettes connectées (VueJS, TS, WebRTC)',
-            'Mise en place de briques techniques (Keycloak, Salesforce, Crowdin)',
-            'Partage et accompagnement sur les bonnes pratiques de dev (CI/CD, TU)',
-            'Maintenance et refactoring techniques'
+            i18n.global.t('experiences.ama.todo2.task1'),
+            i18n.global.t('experiences.ama.todo2.task2'),
+            i18n.global.t('experiences.ama.todo2.task3'),
+            i18n.global.t('experiences.ama.todo2.task4')
           ]
         },
         {
-          title: 'Autre',
-          tasks: ['Gestionnaire de la ludothèque R&D', 'Coordinateur RSE R&D']
+          title: i18n.global.t('experiences.jobs.other'),
+          tasks: [
+            i18n.global.t('experiences.ama.todo3.task1'),
+            i18n.global.t('experiences.ama.todo3.task2')
+          ]
         }
       ],
       startDate: new Date(2016),
@@ -36,13 +40,13 @@ export abstract class UserExperiencesController {
       type: experienceType.PERMANENT
     },
     {
-      title: 'OATIC',
+      title: i18n.global.t('experiences.oatic.title'),
       todo: [
         {
-          title: 'Développeur web, Fullstack',
+          title: i18n.global.t('experiences.jobs.fullstack'),
           tasks: [
-            "Produit Mookitek, créateur d'exercices interactifs en ligne",
-            'Projets applicatifs pour des clients externes (Backbone, Ruby on rails)'
+            i18n.global.t('experiences.oatic.todo1.task1'),
+            i18n.global.t('experiences.oatic.todo1.task2')
           ]
         }
       ],
@@ -52,13 +56,13 @@ export abstract class UserExperiencesController {
       type: experienceType.ALTERNATELY
     },
     {
-      title: 'ENSCR',
+      title: i18n.global.t('experiences.enscr.title'),
       todo: [
         {
-          title: 'Développeur web, Fullstack',
+          title: i18n.global.t('experiences.jobs.fullstack'),
           tasks: [
-            'Projets web de gestion (interne)',
-            'Gestion du parc informatique'
+            i18n.global.t('experiences.enscr.todo1.task1'),
+            i18n.global.t('experiences.enscr.todo1.task2')
           ]
         }
       ],

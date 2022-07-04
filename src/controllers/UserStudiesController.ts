@@ -1,18 +1,19 @@
 // import i18n from '@/i18n'
+import i18n from '@/i18n'
 import StudyInterface, { studyType } from '@/interfaces/StudyInterface'
 
 export abstract class UserStudiesController {
   public static studies = [
     {
-      title: 'IMIE',
+      title: i18n.global.t('studies.imie.title'),
       todo: [
         {
-          title: 'Licence & Master(BAC + 5)',
+          title: i18n.global.t('studies.levels.master'),
           tasks: [
-            'Licence CDPN (Concepteur Développeur en Projet Numérique)',
-            "Master EEDSI (Expert en Etudes et Développement du Système d'Information)",
-            'Participation au programme « les Entreprenariales »',
-            'Alternance avec la société « OATIC »'
+            i18n.global.t('studies.imie.todo.task1'),
+            i18n.global.t('studies.imie.todo.task2'),
+            i18n.global.t('studies.imie.todo.task3'),
+            i18n.global.t('studies.imie.todo.task4')
           ]
         }
       ],
@@ -22,14 +23,14 @@ export abstract class UserStudiesController {
       type: studyType.ALTERNATELY
     },
     {
-      title: 'AFTEC',
+      title: i18n.global.t('studies.aftec.title'),
       todo: [
         {
-          title: 'BTS (BAC +2)',
+          title: i18n.global.t('studies.levels.bts'),
           tasks: [
-            'BTS SIO (Services Informatiques aux Organisations)',
-            'Spécialité SLAM (Solution Logiciel et Application Métier)',
-            "Alternance avec l'école « ENSCR »"
+            i18n.global.t('studies.aftec.todo.task1'),
+            i18n.global.t('studies.aftec.todo.task2'),
+            i18n.global.t('studies.aftec.todo.task3')
           ]
         }
       ],
@@ -39,13 +40,13 @@ export abstract class UserStudiesController {
       type: studyType.ALTERNATELY
     },
     {
-      title: 'Coëtlogon',
+      title: i18n.global.t('studies.coetlogon.title'),
       todo: [
         {
-          title: 'Bac Professionnel',
+          title: i18n.global.t('studies.levels.bac'),
           tasks: [
-            'Bac Pro SEN (Système Electronique et Numérique)',
-            'Spécialité TR (Télécom et Réseaux)'
+            i18n.global.t('studies.coetlogon.todo.task1'),
+            i18n.global.t('studies.coetlogon.todo.task2')
           ]
         }
       ],

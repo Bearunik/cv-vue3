@@ -1,6 +1,6 @@
 <template>
   <v-card class="elevation-3">
-    <v-card-title class="text-primary">{{ $t('experiences') }}</v-card-title>
+    <v-card-title class="text-primary">{{ $t('experiences.title') }}</v-card-title>
     <v-card-text>
       <ExpandedList :list="formatedExperiences" openAtStart />
     </v-card-text>
